@@ -1,10 +1,8 @@
 <h1>All Questions:</h1>
 
 <ol>
-  <% @questions.each do |question| %>
-    <li><%= render partial: "question", object: question %></li>
-  <% end %>
+  <%= render @questions %>
 </ol>
 
 <h2>New Question:</h2>
-<%= render "form" %>
+<%= render "questions/form" %>
